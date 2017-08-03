@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<div class="container">
+
+
+    <style>
+        .nav-top {
+            width: 600px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .nav-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .article-bottom {
+            width: 600px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        span.arial-bold {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            color: #1b67b5;
+        }
+        
+        sup.span-sup {
+            font-size: 8px;
+            line-height: 8px;
+        }
+        
+        sup.h1-sup {
+            font-size: 10px;
+            line-height: 30px;
+        }
+        
+        h1 {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        
+        h2 {
+            font-size: 21px;
+            line-height: 0;
+        }
+        
+        h3 {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        
+        h4 {
+            font-family: "Arial";
+            font-size: 13px;
+            line-height: 13px;
+        }
+        
+        p {
+            display: block;
+            margin-bottom: -6px;
+            /** Change this value to whatever you wish **/
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /*padding-bottom: -20px;*/
+            color: #817f7f;
+        }
+        
+        p.bigger {
+            display: block;
+            margin-bottom: -6px;
+            /** Change this value to whatever you wish **/
+            font-family: "Arial";
+            font-size: 14px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 800;
+            line-height: 20px;
+            /*padding-bottom: -20px;*/
+            color: #817f7f;
+        }
+        
+        blockquote {
+            font-family: "Arial Bold";
+            font-size: 21px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        
+        span {
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /*padding-top: 50px;
+            background-color: aqua;*/
+            color: #817f7f;
+        }
+        
+        .div-footer {
+            padding: 7px 0;
+            line-height: 30px;
+        }
+        
+        .div-footer .footer-text {
+            display: inline;
+            font-family: "Arial";
+            font-size: 10px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 10px;
+            color: #817f7f;
+        }
+        
+        #center-text {
+            border: 0;
+            border-bottom: 1px;
+            height: 215px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        #content {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            padding: 10px 0 0;
+        }
+        
+        .div-header {
+            position: relative;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #header-container {
+            position: relative;
+            width: 600px;
+            padding: 15px 0 5px;
+            margin: 0;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        .right-border {
+            border: 0;
+            border-right: 1px;
+            border-right-color: #817f7f;
+            border-style: solid;
+        }
+        
+        .container {
+            width: 600px;
+            /*can be in percentage also.*/
+            height: auto;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            background-repeat: repeat-x;
+            background-image: url(./images/digital_wallet/cnb_bg_grad.jpg);
+        }
+        
+        .item {
+            padding-right: 5px;
+        }
+        
+        .item.pic-buffer {
+            padding-top: 4px;
+        }
+        
+        #info {
+            max-width: 300px;
+            padding: 10px 0;
+        }
+        
+        #info2 {
+            width: 400px;
+            padding: 20px 20px 20px 0;
+            border: 0;
+            border-right: 1px;
+            border-right-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        #info3 {
+            width: 320px;
+            padding: 20px 0 20px 20px;
+        }
+        
+        .top {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .left {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .right {
+            margin-left: auto;
+        }
+        
+        img.hero-image {
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+        }
+        
+        #pic {
+            padding: 10px 0 0;
+            height: 275px;
+        }
+        
+        a:link {
+            /*text-decoration: none;*/
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Unvisited link.*/
+        
+        a:visited {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Visited links.*/
+        
+        a:hover {
+            color: #1b67b5;
+            font-weight: bold;
+            /*border-bottom: 1px solid #1b67b5;*/
+        }
+        /*The user mouses over a link.*/
+        
+        a:focus {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user clicks on a link.*/
+        
+        a:active {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user has clicked a link.*/
+
+    </style>
+
+    <div id="header-container">
+        <div class="div-header">
+            <h1>City National Bank&rsquo;s Digital Pay - <br>Helping You Pay More Conveniently!</h1>
+        </div>
+    </div>
+
+    <article>
+        <div id="center-text">
+            <div id="content">
+                <div class="left" id="info">
+                    <p>City National Bank has partnered with Apple Pay, Android Pay and Samsung Pay to bring you the flexiblity to pay from your mobile device.</p>
+                    <br>
+                    <p>By adding your City National Bank VISA card to your mobile wallet, you can pay directly from your phone wherever mobile pay is accepted.</p>
+                    <br>
+                </div>
+                <div class="bottom right" id="pic">
+                    <img class="hero-image" src="./images/digital_wallet/cnb_home_hero_pic.png">
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <div>
+        <div id="content">
+            <div class="left" id="info2">
+                <h3>Digital Pay is accepted at merchants <br>where you see both of these icons:</h3>
+
+                <div class="item pic-buffer">
+                    <img src="./images/digital_wallet/cnb_samsung_tech_icons.png">
+                </div>
+            </div>
+            <div class="left" id="info3">
+                <p class="bigger">To learn more or to sign up, <br>click on a link below:</p>
+
+                <p class="bigger"><a href="#">Apple Pay</a></p>
+
+                <p class="bigger"><a href="#">Android Pay</a></p>
+
+                <p class="bigger"><a href="#">Samsung Pay</a></p>
+
+            </div>
+        </div>
+    </div>
+
+</div>

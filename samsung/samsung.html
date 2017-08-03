@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<div class="container">
+
+
+    <style>
+        .nav-top {
+            width: 600px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .nav-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .article-bottom {
+            width: 600px;
+            padding: 10px 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        span.arial-bold {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            color: #1b67b5;
+        }
+        
+        sup.span-sup {
+            font-size: 8px;
+            line-height: 8px;
+        }
+        
+        sup.h1-sup {
+            font-size: 10px;
+            line-height: 30px;
+        }
+        
+        h1 {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        
+        h2 {
+            font-size: 21px;
+            line-height: 0;
+        }
+        
+        h3 {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        
+        h4 {
+            font-family: "Arial";
+            font-size: 13px;
+            line-height: 13px;
+        }
+        
+        p {
+            display: block;
+            margin-bottom: -6px;
+            /** Change this value to whatever you wish **/
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /*padding-bottom: -20px;*/
+            color: #817f7f;
+        }
+        
+        p.compact {
+            display: block;
+            margin-bottom: -6px;
+            /** Change this value to whatever you wish **/
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 16px;
+            /*padding-bottom: -20px;*/
+            color: #817f7f;
+        }
+        
+        blockquote {
+            font-family: "Arial Bold";
+            font-size: 21px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        
+        span {
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /*padding-top: 50px;
+            background-color: aqua;*/
+            color: #817f7f;
+        }
+        
+        .div-footer {
+            /*padding: 7px 0;
+            line-height: 30px;*/
+            padding: 20px 0;
+        }
+        
+        .div-footer .footer-text {
+            display: inline;
+            font-family: "Arial";
+            font-size: 10px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 10px;
+            color: #817f7f;
+        }
+        
+        #center-text {
+            height: 335px;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        #content {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            padding: 10px 0 0;
+        }
+        
+        .div-header {
+            position: relative;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #header-container {
+            position: relative;
+            width: 600px;
+            padding: 15px 0 5px;
+            margin: 0;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        .right-border {
+            border: 0;
+            border-right: 1px;
+            border-right-color: #817f7f;
+            border-style: solid;
+        }
+        
+        .container {
+            width: 600px;
+            /*can be in percentage also.*/
+            height: auto;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            background-repeat: repeat-x;
+            background-image: url(./images/digital_wallet/cnb_bg_grad.jpg);
+        }
+        
+        .item {
+            padding-right: 5px;
+        }
+        
+        .item.pic-buffer {
+            padding-top: 4px;
+        }
+        
+        #info {
+            max-width: 400px;
+        }
+        
+        .top {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .left {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .center {
+            -webkit-align-self: flex-start;
+            align-self: center;
+        }
+        
+        .right {
+            margin-left: auto;
+        }
+        
+        img.hero-image {
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+        }
+        
+        .pic {
+            padding: 10px 10px 10px 0;
+            height: 275px;
+            width: 195px;
+            /*background-color: red;*/
+        }
+        
+        a:link {
+            /*text-decoration: none;*/
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Unvisited link.*/
+        
+        a:visited {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Visited links.*/
+        
+        a:hover {
+            color: #1b67b5;
+            font-weight: bold;
+            /*border-bottom: 1px solid #1b67b5;*/
+        }
+        /*The user mouses over a link.*/
+        
+        a:focus {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user clicks on a link.*/
+        
+        a:active {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user has clicked a link.*/
+
+    </style>
+
+    <nav class="nav-top nav-container">
+
+        <div class="item right-border">
+            <a href="#"><img width="125" alt="City National Bank" height="40" src="./images/digital_wallet/cnb_logo_header.png"></a>
+        </div>
+        <div class="item right-border">
+            <a href="#"><img width="58" alt="Visa" height="40" src="./images/digital_wallet/cnb_visa_logo_header.png"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img width="54" alt="Samsung" height="40" src="./images/digital_wallet/cnb_samsung_icon.png"></a>
+        </div>
+
+    </nav>
+
+    <div id="header-container">
+        <div class="div-header">
+            <h2>Visa + Samsung Pay is Here.</h2>
+            <h1>Adding your City National Bank Visa<sup class="h1-sup">&#174;</sup> <br>card to Samsung Pay is as easy as <br>snapping a photo.</h1>
+        </div>
+    </div>
+
+    <article>
+        <div id="center-text">
+            <div id="content">
+                <div class="pic left">
+                    <img class="hero-image" src="./images/digital_wallet/cnb_samsung_icon_1.png">
+                    <h3>Simple to set up. Simple to pay.</h3>
+                    <p class="compact">1. Make sure your compatible Samsung device<sup class="span-sup">&#174;</sup> is updated with Samsung Pay.</p>
+                    <p class="compact">2. Take a picture of your City National Bank Visa with your device&rsquo;    s camera.</p>
+                    <p class="compact">3. Secure it with your fingerprint and backup PIN and you&rsquo;ll be ready to go.</p>
+                </div>
+                <div class="pic center">
+                    <img class="hero-image" src="./images/digital_wallet/cnb_samsung_icon_2.png">
+                    <h3>Our best security, <br>built-in.</h3>
+                    <p class="compact">Samsung Pay transactions are authorized with your fingerprint and use a digital identifier instead of your card number. And even if your phone is compromised, Samsung Knox technology encrypts your card info within a separate, secure data vault.</p>
+                </div>
+                <div class="pic right">
+                    <img class="hero-image" src="./images/digital_wallet/cnb_samsung_icon_3.png">
+                    <h3>Convenience and coverage.</h3>
+                    <p class="compact">Samsung Pay makes paying with your phone fast, easy and convenient. Plus, it works almost anywhere you can swipe or tap.* See a full list of Samsung Pay merchants at samsung.com/pay</p>
+                </div>
+            </div>
+        </div>
+        <div class="article-bottom">
+            <div class="item pic-buffer">
+                <img src="./images/digital_wallet/cnb_samsung_small_phone.png">
+            </div>
+            <div class="item">
+                <h3>Accepted at merchants where <br>you see both of these icons:</h3>
+            </div>
+            <div class="item pic-buffer">
+                <img src="./images/digital_wallet/cnb_samsung_tech_icons.png">
+            </div>
+        </div>
+    </article>
+
+    <div class="div-footer">
+        <span class="footer-text">*Available on Galaxy S7, Galaxy S7 edge. Galaxy S7 active, Galaxy S6, Galaxy S6 edge, Galaxy S6 edge+, Galaxy S6 active, Galaxy Note 5 and other select Samsung devices, most major carriers and supported cards. See samsung.com/pay for complete list and contact your bank or financial institution to verify supported cards.<br><br>&#169;2017 Visa.<sup>&#174;</sup> All rights reserved</span>
+    </div>
+
+</div>

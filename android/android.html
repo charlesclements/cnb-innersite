@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<div class="container">
+
+
+    <style>
+        .nav-top {
+            width: 600px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .nav-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .article-bottom {
+            width: 600px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        span.arial-bold {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            color: #1b67b5;
+        }
+        
+        sup.span-sup {
+            font-size: 8px;
+            line-height: 8px;
+        }
+        
+        sup.h1-sup {
+            font-size: 10px;
+            line-height: 30px;
+        }
+        
+        h1 {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        
+        h2 {
+            font-size: 21px;
+            line-height: 0;
+        }
+        
+        h3 {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        
+        h4 {
+            font-family: "Arial";
+            font-size: 13px;
+            line-height: 13px;
+        }
+        
+        p {
+            display: block;
+            margin-bottom: -6px;
+            /** Change this value to whatever you wish **/
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /*padding-bottom: -20px;*/
+            color: #817f7f;
+        }
+        
+        blockquote {
+            font-family: "Arial Bold";
+            font-size: 21px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        
+        span {
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+            /*padding-top: 50px;
+            background-color: aqua;*/
+            color: #817f7f;
+        }
+        
+        .div-footer {
+            padding: 7px 0;
+            line-height: 30px;
+        }
+        
+        .div-footer .footer-text {
+            display: inline;
+            font-family: "Arial";
+            font-size: 10px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 10px;
+            color: #817f7f;
+        }
+        
+        #center-text {
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        #content {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            padding: 10px 0 0;
+        }
+        
+        .div-header {
+            position: relative;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #header-container {
+            position: relative;
+            width: 600px;
+            padding: 15px 0 5px;
+            margin: 0;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        .right-border {
+            border: 0;
+            border-right: 1px;
+            border-right-color: #817f7f;
+            border-style: solid;
+        }
+        
+        .container {
+            width: 600px;
+            /*can be in percentage also.*/
+            height: auto;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            background-repeat: repeat-x;
+            background-image: url(./images/digital_wallet/cnb_bg_grad.jpg);
+        }
+        
+        .item {
+            padding-right: 5px;
+        }
+        
+        .item.pic-buffer {
+            padding-top: 4px;
+        }
+        
+        #info {
+            max-width: 400px;
+        }
+        
+        .top {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .left {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .right {
+            margin-left: auto;
+        }
+        
+        img.hero-image {
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+        }
+        
+        #pic {
+            padding: 10px 0 0;
+            height: 275px;
+        }
+        
+        a:link {
+            /*text-decoration: none;*/
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Unvisited link.*/
+        
+        a:visited {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Visited links.*/
+        
+        a:hover {
+            color: #1b67b5;
+            font-weight: bold;
+            /*border-bottom: 1px solid #1b67b5;*/
+        }
+        /*The user mouses over a link.*/
+        
+        a:focus {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user clicks on a link.*/
+        
+        a:active {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user has clicked a link.*/
+
+    </style>
+
+    <nav class="nav-top nav-container">
+
+        <div class="item right-border">
+            <a href="#"><img width="125" alt="City National Bank" height="40" src="./images/digital_wallet/cnb_logo_header.png"></a>
+        </div>
+        <div class="item right-border">
+            <a href="#"><img width="58" alt="Visa" height="40" src="./images/digital_wallet/cnb_visa_logo_header.png"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img width="54" alt="Android" height="40" src="./images/digital_wallet/cnb_android_icon.png"></a>
+        </div>
+
+    </nav>
+
+    <div id="header-container">
+        <div class="div-header">
+            <h2>Your CNB Visa card + Android Pay</h2>
+            <h1>Confidence. Simplicity. And the things you love about your City National Bank Visa card.</h1>
+        </div>
+    </div>
+
+    <article>
+        <div id="center-text">
+            <div id="content">
+                <div class="left" id="info">
+                    <h4>Getting started on your Android device is as easy as:</h4>
+                    <p>1. Download the Android Pay app.</p>
+                    <p>2. Add your City National Bank (CNB) Visa<sup class="span-sup">&#174;</sup> card - it's as simple as snapping a photo</p>
+                    <p>3. Pay confidently at over a million locations in the U.S.</p>
+                    <br>
+                    <p>Use it today.</p>
+                    <p>There&rsquo;s a lot to love about Android Pay. Like how it lets you use your favorite card at more than a million locations in the U.S.</p>
+                    <p>See a full list of places Android Pay is accepted at android.com/pay. Get extra layers of security.</p>
+                    <p>Android Pay never uses your actual card number. Instead it uses a virtual account number so your card details and private info stay safe.</p>
+                    <br>
+                </div>
+                <div class="bottom right" id="pic">
+                    <img class="hero-image" src="./images/digital_wallet/cnb_phone_android_gr.png">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div class="div-footer">
+        <span class="footer-text">Android and Android Pay are trademarks of Google Inc.<br>&#169;2017 Visa.&#174; All rights reserved</span>
+    </div>
+
+</div>

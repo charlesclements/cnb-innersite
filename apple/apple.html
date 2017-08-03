@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<div class="container">
+
+
+    <style>
+        .nav-top {
+            width: 600px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .nav-container {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .article-bottom {
+            width: 600px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        span.arial-bold {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: "Arial Bold", sans-serif;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            color: #1b67b5;
+        }
+        
+        sup.span-sup {
+            font-size: 8px;
+            line-height: 8px;
+        }
+        
+        sup.h1-sup {
+            font-size: 10px;
+            line-height: 30px;
+        }
+        
+        h1 {
+            font-size: 27px;
+            line-height: 30px;
+        }
+        
+        h2 {
+            font-size: 21px;
+            line-height: 0;
+        }
+        
+        h3 {
+            font-size: 17px;
+            line-height: 20px;
+        }
+        
+        h4 {
+            font-family: "Arial";
+            font-size: 13px;
+            line-height: 13px;
+        }
+        
+        p {
+            font-family: "Arial Bold";
+            font-size: 12px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        
+        blockquote {
+            font-family: "Arial Bold";
+            font-size: 21px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        
+        span {
+            font-family: "Arial";
+            font-size: 13px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 20px;
+            color: #817f7f;
+        }
+        
+        .div-footer {
+            padding: 20px 0;
+        }
+        
+        .div-footer .footer-text {
+            display: inline;
+            font-family: "Arial";
+            font-size: 10px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            line-height: 10px;
+            color: #817f7f;
+        }
+        
+        #center-text {
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        #content {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        
+        .div-header {
+            position: relative;
+            width: 600px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #header-container {
+            position: relative;
+            width: 600px;
+            padding: 15px 0 5px;
+            margin: 0;
+            border: 0;
+            border-bottom: 1px;
+            border-bottom-color: #817f7f;
+            border-style: dashed;
+        }
+        
+        .right-border {
+            border: 0;
+            border-right: 1px;
+            border-right-color: #817f7f;
+            border-style: solid;
+        }
+        
+        .container {
+            width: 600px;
+            /*can be in percentage also.*/
+            height: auto;
+            margin: 0 auto;
+            padding: 10px;
+            position: relative;
+            background-repeat: repeat-x;
+            background-image: url(./images/digital_wallet/cnb_bg_grad.jpg);
+        }
+        
+        .item {
+            padding-right: 5px;
+        }
+        
+        .item.pic-buffer {
+            padding-top: 4px;
+        }
+        
+        #info {
+            max-width: 322px;
+        }
+        
+        .top {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .left {
+            -webkit-align-self: flex-start;
+            align-self: flex-start;
+        }
+        
+        .right {
+            margin-left: auto;
+        }
+        
+        img.hero-image {
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+        }
+        
+        #pic {
+            padding: 0;
+            height: 275px;
+        }
+        
+        a:link {
+            /*text-decoration: none;*/
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Unvisited link.*/
+        
+        a:visited {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*Visited links.*/
+        
+        a:hover {
+            color: #1b67b5;
+            font-weight: bold;
+            /*border-bottom: 1px solid #1b67b5;*/
+        }
+        /*The user mouses over a link.*/
+        
+        a:focus {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user clicks on a link.*/
+        
+        a:active {
+            color: #54565b;
+            font-weight: bold;
+            /*border-bottom: 1px solid #54565b;*/
+        }
+        /*The user has clicked a link.*/
+
+    </style>
+
+    <nav class="nav-top nav-container">
+
+        <div class="item right-border">
+            <a href="#"><img width="125" alt="City National Bank" height="40" src="./images/digital_wallet/cnb_logo_header.png"></a>
+        </div>
+        <div class="item right-border">
+            <a href="#"><img width="58" alt="Visa" height="40" src="./images/digital_wallet/cnb_visa_logo_header.png"></a>
+        </div>
+        <div class="item">
+            <a href="#"><img width="54" alt="Samsung" height="40" src="./images/digital_wallet/cnb_apple_icon.png"></a>
+        </div>
+
+    </nav>
+
+    <div id="header-container">
+        <div class="div-header">
+            <h2>Apple Pay</h2>
+            <h1>Pay confidently with Visa and <br>City National Bank</h1>
+        </div>
+    </div>
+
+    <article>
+        <div id="center-text">
+            <h3>Enjoy all the benefits of your CNB Visa<sup class="h1-sup">&#174;</sup> using Apple Pay<sup class="h1-sup">TM</sup>
+            </h3>
+
+            <div id="content">
+                <div class="left" id="info">
+                    <h4>Set up is simple</h4>
+                    <span>To add your card to Apple Pay:</span>
+                    <br>
+                    <span><span class="arial-bold">&#8226; On iPhone<sup class="span-sup">&#174;</sup>,</span> open the Wallet app and tap the plus sign. From there, follow the onscreen instructions.</span>
+                    <br>
+                    <span><span class="arial-bold">&#8226; On Apple Watch&#8482;,</span> open the Apple Watch app on your iPhone and select &#8220;Wallet & Apple Pay,&#8221; then tap &#8220;Add Credit or Debit Card.&#8221; From there, follow the onscreen instructions.</span>
+                    <br>
+                    <span><span class="arial-bold">&#8226; On iPad<sup class="span-sup">&#174;</sup>,</span> go into Settings, open &#8220;Wallet & Apple Pay,&#8221; and select &#8220;Add Credit or Debit Card.&#8221; From there, follow the onscreen instructions.</span>
+                    <br>
+                </div>
+                <div class="bottom right" id="pic">
+                    <img class="hero-image" src="./images/digital_wallet/cnb_phone_graphic.png">
+                </div>
+            </div>
+        </div>
+        <div id="bottom-text">
+            <h4>Paying is easy and secure.</h4>
+            <span>To pay within stores, hold the iPhone near the contactless reader with your finger on Touch ID&#8482;. On Apple Watch, just double-click the side button and hold the display of your Apple Watch up to the contactless reader. To pay within apps on iPhone and iPad, select Apple Pay as the payment method and place your finger on Touch ID.</span>
+        </div>
+        <div class="article-bottom">
+            <div class="item">
+                <h3>Accepted at merchants where <br>you see both of these icons:</h3>
+            </div>
+            <div class="item pic-buffer">
+                <a href="#"><img src="./images/digital_wallet/cnb_visa_logo_footer.jpg"></a>
+            </div>
+            <div class="item pic-buffer">
+                <a href="#"><img src="./images/digital_wallet/cnb_nfc_logo_footer.jpg"></a>
+            </div>
+        </div>
+    </article>
+
+    <div class="div-footer">
+        <span class="footer-text">*Apple Pay works with iPhone 6 and later and Apple Watch in stores, and iPhone 6 and later, iPad Pro, iPad Air 2, and iPad mini 3 and later within apps.For a list of compatible Apple Pay devices, see www.apple.com/applepay. Apple and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Pay and Touch ID are trademarks of Apple Inc.<br><br>&#169;2017 Visa.<sup>&#174;</sup> All rights reserved</span>
+    </div>
+
+</div>
